@@ -1,0 +1,77 @@
+.main{
+  padding-bottom: 10em;
+}
+
+.main__title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 4em;
+  font-weight: 800;
+  margin-bottom: -50px;
+  text-transform: uppercase;
+}
+
+.main__title span {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0px;
+}
+
+.main__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+
+.main__item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5px solid #646260;
+  padding: 2em 1em;
+}
+
+.item__description {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.item__title {
+  color: #c06327;
+}
+
+.item__specs {
+  color: white;
+}
+
+.item__details {
+  max-width: 25em;
+  line-height: 2em;
+  color: #9a9a99;
+}
+
+.item__actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+    /* Стили для блока действий элемента */
+}
+
+.item__price {
+  font-weight: 700;
+  color: white;
+  font-size: 1.5em;
+}
+
+.item__button {
+    padding: 1em 1.5em;
+    align-self: center;
+    border-radius: 50px;
+    background-color: #77a23f;
+    color: black;
+    font-weight: 700;
+  }
+

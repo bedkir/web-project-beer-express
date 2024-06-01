@@ -1,0 +1,119 @@
+/* General Styles */
+.header {
+    position: fixed; /* Фиксированное положение */
+    top: 0; /* Закрепление сверху */
+    width: 100%; /* Ширина равна 100% экрана */
+    z-index: 1000; /* Устанавливаем z-index, чтобы header был выше других элементов */
+    /* Добавим немного тени для выделения */
+    /* Выравнивание заголовка по центру */
+    background-color: #1d1a17;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 4.5em;
+    font-size: 18px;
+    position: relative;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+}
+
+.nav__menu {
+    display: flex;
+    gap: 1.3em;
+    align-items: center;
+}
+
+.nav__image {
+    width: 5em;
+    height: 5em;
+}
+
+.header__burger {
+    display: none;
+}
+.header__actions{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+
+.header__button {
+    padding: 0.75em 1.75em;
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    font-weight: 600;
+    color: #000000;
+    text-transform: uppercase;
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    background: #c06327;
+}
+
+.header__button:hover {
+    background-color: transparent;
+    border-color: #c06327;
+    color: #c06327;
+}
+
+.nav__link {
+    padding: 0.75em 1.75em;
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    font-weight: 600;
+    color: #000000;
+    text-transform: uppercase;
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    background: #997040;
+}
+
+.nav__link:hover {
+    background-color: transparent;
+    border-color: #997040;
+    color: #997040;
+}
+
+@media (max-width: 992px) {
+    .header__container {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__container {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    .nav__menu {
+        display: none;
+    }
+    .header__burger {
+        display: block;
+        min-width: 20px;
+        min-height: 20px;
+        padding: .5em;
+        background-color: #c06327;
+        border-radius: 9999px;
+
+    }
+    .header__burger > img {
+        width: 15px;
+        height: 15px;
+    }
+}
